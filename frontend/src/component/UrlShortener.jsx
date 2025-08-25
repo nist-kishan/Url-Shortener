@@ -4,6 +4,7 @@ import { useShortenUrl } from "../hooks/useUrl";
 import { Loader2, Copy } from "lucide-react";
 
 const UrlShortener = () => {
+  const BASEURL=`${import.meta.env.VITE_BACKEND_URL}/api/url`;
   const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
   const { mutate, data, isPending, isError, error } = useShortenUrl();
@@ -17,7 +18,7 @@ const UrlShortener = () => {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(
-      `${import.meta.env.VITE_BACKEND_URL}/${data.shortUrl}`
+      `${BASEURL}/${data.shortUrl}`
     );
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
@@ -88,7 +89,7 @@ const UrlShortener = () => {
               className="mt-6 p-4 rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
             >
               <a
-                href={`${import.meta.env.VITE_BACKEND_URL}/api/url/${data.shortUrl}`}
+                href={`${BASEURL}/${data.shortUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:underline font-medium break-all sm:break-normal text-center sm:text-left"
