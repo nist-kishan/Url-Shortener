@@ -73,7 +73,10 @@ Click Shorten
 Copy and share your shortened link 🎉
 
 📸 Screenshots
-🔗 
+🔗 <img width="600" height="450" alt="Screenshot 2025-08-25 063315" src="https://github.com/user-attachments/assets/4838fdb4-b99f-4535-89e3-078be9f3582d" />
+🔗 <img width="600" height="450" alt="Screenshot 2025-08-25 063342" src="https://github.com/user-attachments/assets/d15b6547-7882-4af4-b5bc-437fbc1fb1dd" />
+
+
 
 🚫 404 Page
 
